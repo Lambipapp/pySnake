@@ -41,41 +41,8 @@ class snake:
 
     def setDirection(self, newDir):
         self.moveDir = newDir
-        
+
     def getDirection(self):
         return self.moveDir
-    #def move(self, gb):
-        #if self.moveDir == (1, 0) or self.moveDir == (-1, 0) or self.moveDir == (0, 1) or self.moveDir == (0, -1): 
-
-            #newRow = self.headPos[0] + self.moveDir[1]
-            #newCollum = self.headPos[1] + self.moveDir[0]
-            #print(self.headPos[0], self.headPos[1], newRow, newCollum)
-
-
-
-            #if newRow < 0 or newRow >= self.rows or newCollum < 0 or newCollum >= self.collums:
-                #print("DEAD SNAKE")
-                #return -1
-
-            #if gb[newRow][newCollum] == 0: #move head and pop tail
-                #self.headPos = (newRow, newCollum)
-                #self.poses.append(self.headPos)
-                #self.switchPixel(gb, self.poses[0][0], self.poses[0][1], 0)
-                #self.switchPixel(gb, newRow, newCollum, 1)
-
-                #gb[self.headPos[0]][self.headPos[1]] = 1
-                #gb[self.poses[0][0]][self.poses[0][1]] = 0
-                #self.poses.pop(0)
-
-            
-        #else:
-            #print("moveDir is wrong:", self.moveDir)
-            #return -1
-
-    
-    #def switchPixel(self, gb, row, collum, value):
-        #gb[row][collum] = 1
-
-    
 
         

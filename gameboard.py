@@ -7,14 +7,12 @@ class gameboard:
 
     def __init__(self, width, height):
         self.size = (width, height)
-        
+
         for y in range(height):
             row = []
             for x in range(width):
                 row.append(0)
             self.gb.append(row)
-        #self.setCellVal(1, 5, 1)
-        #print(self.gb)
 
     def setCellVal(self, xPos, yPos, val):
         self.gb[yPos][xPos] = val
